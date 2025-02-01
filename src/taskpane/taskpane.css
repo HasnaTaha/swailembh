@@ -1,0 +1,152 @@
+/* Overall Styles */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* Set a clean, modern font */
+}
+
+/* Container */
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Header */
+.ms-welcome__header {
+  padding: 20px;
+  text-align: center;
+}
+
+.ms-welcome__header img {
+  display: block;
+  margin: 0 auto 10px; /* Center image horizontally */
+  max-width: 100%; /* Prevent image from overflowing */
+  height: auto;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  background-color: #0078d4;
+}
+
+.tab-button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.tab-button.active {
+  background-color: #005ea6;
+}
+
+.tab-button:hover {
+  background-color: #005ea6;
+}
+
+/* Tab Content */
+.tab-content {
+  padding: 20px;
+}
+
+.tab-panel {
+  display: none;
+}
+
+.tab-panel.active {
+  display: block;
+}
+
+/* Snippet List */
+#snippet-list {
+  list-style: none;
+  padding: 0;
+}
+
+#snippet-list li {
+  margin: 10px 0;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Insert Button */
+.insert-btn {
+  background-color: #0078d4;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.insert-btn:hover {
+  background-color: #005ea6;
+}
+
+/* Text Area */
+textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Add Snippet Button */
+#add-snippet-btn, #add-tag-btn { /* Apply to both buttons */
+  background-color: #0078d4;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#add-snippet-btn:hover, #add-tag-btn:hover {
+  background-color: #005ea6;
+}
+
+/* Form Elements */
+label {
+  font-weight: bold;
+  display: block; /* Make labels stack above their inputs */
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Clearfix for floated elements (if needed) */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
